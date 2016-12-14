@@ -8,6 +8,7 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -16,6 +17,7 @@ import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.content.Intent;
 
 import java.util.Random;
 
@@ -63,7 +65,7 @@ public class MainActivity extends Activity {
                 whack();
 
                 Toast.makeText(getApplicationContext(),
-                        (CharSequence) (new Integer(score).toString()),
+                        (CharSequence) (Integer.toString(score)),
                         Toast.LENGTH_SHORT).show();
 
             }
@@ -140,7 +142,7 @@ public class MainActivity extends Activity {
         private Context mcontext;
         private Integer[] array;
 
-        public ImageAdapter(Context context, int resource, Object[] objects) {
+        ImageAdapter(Context context, int resource, Object[] objects) {
 
             super(context, resource, (Integer[]) objects);
             mcontext = context;
@@ -150,7 +152,7 @@ public class MainActivity extends Activity {
 
         @NonNull
         @Override
-        public View getView(int position, View convertView, ViewGroup parent) {
+        public View getView(int position, View convertView, @NonNull ViewGroup parent) {
             ImageView image;
             if (convertView == null) {
                 // if it's not recycled, initialize some attributes
@@ -165,5 +167,3 @@ public class MainActivity extends Activity {
         }
     }
 }
-
-
