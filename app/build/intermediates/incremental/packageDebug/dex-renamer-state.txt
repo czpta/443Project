@@ -1,0 +1,7 @@
+#Tue Dec 13 18:02:19 EST 2016
+base.0=/Users/christian/school/cs443/443Project/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_2cbb73d6184fe29ba780fac5be449170a8f5a939
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/Users/christian/school/cs443/443Project/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_7418a5735e18ff5e6b5d67b4d0c48cdca69ee4d9/classes.dex
+base.1=/Users/christian/school/cs443/443Project/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_7418a5735e18ff5e6b5d67b4d0c48cdca69ee4d9
+file.0=/Users/christian/school/cs443/443Project/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_2cbb73d6184fe29ba780fac5be449170a8f5a939/classes.dex

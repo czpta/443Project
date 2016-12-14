@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/christian/school/cs443/443Project/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f83b00041ecfba705603fec40363416c7de69719">
+        <dex dex="/Users/christian/school/cs443/443Project/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_16e804c804fb8842c0ae32c433e52c2fa74b2794/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/christian/school/cs443/443Project/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
+        <dex dex="/Users/christian/school/cs443/443Project/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.0.1_04fe6a692a96e107ecbde321f6a815174815297f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/christian/school/cs443/443Project/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/christian/school/cs443/443Project/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.0.1_1c921a5d67afff6d07b45eb6a02bcc422c961503/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/christian/school/cs443/443Project/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="52635cdabc7d639294d9938bb2f3a726aff30691">
+        <dex dex="/Users/christian/school/cs443/443Project/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_7418a5735e18ff5e6b5d67b4d0c48cdca69ee4d9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/christian/school/cs443/443Project/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
+        <dex dex="/Users/christian/school/cs443/443Project/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.0.1_8b2d5f51414d5612a049fcbbc5dc3a33ee26e3da/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/christian/school/cs443/443Project/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="/Users/christian/school/cs443/443Project/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.0.1_3441128bbac1dbc301dd65b8cc4ba201c5d5bd31/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/christian/school/cs443/443Project/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
+        <dex dex="/Users/christian/school/cs443/443Project/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_e93697f231f1991de1085e4727fb30ca4fc1c879/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/christian/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.1/support-annotations-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
+        <dex dex="/Users/christian/school/cs443/443Project/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.0.1_4f320c477b6ff6fd0b1742ee35c728ad1a06bc30/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/christian/school/cs443/443Project/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="/Users/christian/school/cs443/443Project/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.0.1_e7d413d7f8910754630e81024f75c52c14a022cf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/christian/school/cs443/443Project/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
+        <dex dex="/Users/christian/school/cs443/443Project/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.0.1_3b393435a85d842f5ae2f4a77716c596477f383a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/christian/school/cs443/443Project/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
+        <dex dex="/Users/christian/school/cs443/443Project/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_9d0077affc2e1e689ab3df155869196bb80f4fc0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/christian/school/cs443/443Project/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
+        <dex dex="/Users/christian/school/cs443/443Project/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.0.1_0e9e026def23bbec9955678eb564adb511c85e04/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/christian/school/cs443/443Project/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
+        <dex dex="/Users/christian/school/cs443/443Project/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.0.1_c774ae8480745d516cbb7f79521684552fae7ce7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/christian/school/cs443/443Project/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
+        <dex dex="/Users/christian/school/cs443/443Project/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.0.1_9252d29489469344084598a9feab2fd7f7382126/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/christian/school/cs443/443Project/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fe56228822adff1bdd7c441e6a85a3aa52af548a">
+        <dex dex="/Users/christian/school/cs443/443Project/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_2cbb73d6184fe29ba780fac5be449170a8f5a939/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/christian/school/cs443/443Project/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
+        <dex dex="/Users/christian/school/cs443/443Project/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_1a9cc53aab704ea82be42ec49cce01d2fc48371d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/christian/school/cs443/443Project/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/Users/christian/school/cs443/443Project/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_fd969eb789165639a3bc3a492c3937b4e70eaf24/classes.dex" />
+    </item>
+
+</items>
