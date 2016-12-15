@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Project</string>
+    <string name="intro">Made by: Tin Huynh and Christian Zapata</string>
+    <string name="quit">Quit</string>
+    <string name="reset">Reset</string>
+    <string name="ic_launcher">ic_launcher</string>
 </resources>

@@ -2,39 +2,33 @@ package cs443.project;
 
 import android.app.Activity;
 import android.content.Context;
-import android.os.AsyncTask;
 import android.os.Handler;
 import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
-import android.content.Intent;
 
 import java.util.Random;
 
 
 public class MainActivity extends Activity {
 
-    GridView gridView;
+    private GridView gridView;
 
     private static int w=5, destination, count =0, score =0;
 
     private Random r=new Random();
 
-    static Integer[] numbers = new Integer[w*w];
+    private static Integer[] numbers = new Integer[w*w];
 
-    int mole = R.drawable.mole;
+    private int mole = R.drawable.mole;
 
-    int blank = android.R.color.transparent;
+    private int blank = android.R.color.transparent;
 
 
     @Override
@@ -50,7 +44,7 @@ public class MainActivity extends Activity {
 
 
         ArrayAdapter<Integer> adapter = new ImageAdapter(this,
-                R.layout.list_item, numbers);
+                numbers);
 
         gridView.setAdapter(adapter);
 
@@ -65,7 +59,7 @@ public class MainActivity extends Activity {
                 whack();
 
                 Toast.makeText(getApplicationContext(),
-                        (CharSequence) (Integer.toString(score)),
+                        Integer.toString(score),
                         Toast.LENGTH_SHORT).show();
 
             }
@@ -78,7 +72,7 @@ public class MainActivity extends Activity {
         init();
     }
 
-    void init(){
+    private void init(){
         for(int i=0;i<numbers.length;i++)
             numbers[i]= blank;
         count =0;
@@ -88,7 +82,7 @@ public class MainActivity extends Activity {
     }
 
     //HANDLER AND THREAD CODE HERE
-    public Handler threadHandler = new Handler() {
+    private Handler threadHandler = new Handler() {
         public void handleMessage (android.os.Message message){
             ((ArrayAdapter)gridView.getAdapter()).notifyDataSetChanged();
         }
@@ -142,9 +136,9 @@ public class MainActivity extends Activity {
         private Context mcontext;
         private Integer[] array;
 
-        ImageAdapter(Context context, int resource, Object[] objects) {
+        ImageAdapter(Context context, Object[] objects) {
 
-            super(context, resource, (Integer[]) objects);
+            super(context, R.layout.list_item, (Integer[]) objects);
             mcontext = context;
             array = (Integer[]) objects;
         }
@@ -167,3 +161,5 @@ public class MainActivity extends Activity {
         }
     }
 }
+
+
