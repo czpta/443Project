@@ -4,4 +4,7 @@
     <string name="quit">Quit</string>
     <string name="reset">Reset</string>
     <string name="ic_launcher">ic_launcher</string>
+    <string name="start">Start</string>
+    <string name="exit">Exit</string>
+    <string name="logo">Logo</string>
 </resources>
