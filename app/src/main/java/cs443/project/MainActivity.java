@@ -64,12 +64,15 @@ public class MainActivity extends Activity {
 
             }
         });
-
-
     }
 
     public void reset(View view){
         init();
+    }
+
+    //This button is made to quit the activity, and returns back to MenuActivity
+    public void quit(View v) {
+        finish();
     }
 
     private void init(){
@@ -118,9 +121,8 @@ public class MainActivity extends Activity {
                     for(count =0; count < moles;) {
                         int tx = r.nextInt(w);
                         int ty = r.nextInt(w);
-                        if (numbers[ty * w + tx] != mole)
-                        {
-                        numbers[ty * w + tx] = mole;
+                        if (numbers[ty * w + tx] != mole) {
+                            numbers[ty * w + tx] = mole;
                             count++;
                         }
                         threadHandler.sendEmptyMessage(0);
@@ -165,5 +167,3 @@ public class MainActivity extends Activity {
         }
     }
 }
-
-
