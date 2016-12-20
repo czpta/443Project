@@ -115,10 +115,14 @@ public class MainActivity extends Activity {
                     for(int i=0;i<numbers.length;i++)
                         numbers[i]=blank;
 
-                    for(count =0; count < moles; count++) {
+                    for(count =0; count < moles;) {
                         int tx = r.nextInt(w);
                         int ty = r.nextInt(w);
+                        if (numbers[ty * w + tx] != mole)
+                        {
                         numbers[ty * w + tx] = mole;
+                            count++;
+                        }
                         threadHandler.sendEmptyMessage(0);
                     }
                     Thread.sleep(INTERVAL);
