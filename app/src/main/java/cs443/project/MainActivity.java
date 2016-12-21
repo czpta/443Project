@@ -19,8 +19,10 @@ import java.util.Random;
 public class MainActivity extends Activity {
 
     private GridView gridView;
+    
+    private TextView scoreView, timeView;
 
-    private static int w=5, destination, count =0, score =0;
+    private static int w=5, destination, count =0, score =0, time = 50;
 
     private Random r=new Random();
 
@@ -38,6 +40,11 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         gridView = (GridView) findViewById(R.id.gridView1);
+        
+        //create new TextView in the layout design, then add it here
+        scoreView = (TextView) findViewById(R.id.);
+        timeView = (TextView) findViewById(R.id.);
+        
 
         for(int i=0;i<numbers.length;i++)
             numbers[i]= blank;
@@ -49,7 +56,9 @@ public class MainActivity extends Activity {
         gridView.setAdapter(adapter);
 
         Thread treasure = new Thread(treasureGen);
+        Thread timer = new Thread(timerThread);
         treasure.start();
+        timer.start();
 
 
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -57,8 +66,10 @@ public class MainActivity extends Activity {
                                     int position, long id) {
                 destination = position;
                 whack();
+                
+                scoreView.setText(score);
 
-                Toast.makeText(getApplicationContext(),
+                //Toast.makeText(getApplicationContext(),
                         Integer.toString(score),
                         Toast.LENGTH_SHORT).show();
 
@@ -87,7 +98,19 @@ public class MainActivity extends Activity {
     //HANDLER AND THREAD CODE HERE
     private Handler threadHandler = new Handler() {
         public void handleMessage (android.os.Message message){
-            ((ArrayAdapter)gridView.getAdapter()).notifyDataSetChanged();
+            switch (message.what) {
+                case 0:
+                ((ArrayAdapter) gridView.getAdapter()).notifyDataSetChanged();
+                    break;
+
+                case 1:
+                    //create a text view to monitor time
+                    timeView.setText(time);
+                    break;
+
+                case 2:
+                    finish();
+            }
         }
 
 
@@ -106,7 +129,7 @@ public class MainActivity extends Activity {
         }
 
     private Runnable treasureGen = new Runnable(){
-        private static final int INTERVAL = 6000;
+        private static final int INTERVAL = 4000;
         public void run()
         {
             try {
@@ -124,6 +147,7 @@ public class MainActivity extends Activity {
                         if (numbers[ty * w + tx] != mole) {
                             numbers[ty * w + tx] = mole;
                             count++;
+                            time = time +5;
                         }
                         threadHandler.sendEmptyMessage(0);
                     }
@@ -134,6 +158,23 @@ public class MainActivity extends Activity {
                 e.printStackTrace();
             }
 
+        }
+    };
+
+    private Runnable timerThread = new Runnable () {
+        private static final int DELAY = 900;
+        public void run() {
+            try {
+                while (time !=0) {
+                    time--;
+                    Thread.sleep (DELAY);
+                    threadHandler.sendEmptyMessage(1);
+                }
+
+                threadHandler.sendEmptyMessage(2);
+            } catch (InterruptedException e){
+                e.printStackTrace();
+            }
         }
     };
 
