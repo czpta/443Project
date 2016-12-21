@@ -11,6 +11,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.Random;
@@ -19,8 +20,6 @@ import java.util.Random;
 public class MainActivity extends Activity {
 
     private GridView gridView;
-    
-    private TextView scoreView, timeView;
 
     private static int w=5, destination, count =0, score =0, time = 50;
 
@@ -32,6 +31,10 @@ public class MainActivity extends Activity {
 
     private int blank = android.R.color.transparent;
 
+    private TextView scoreView = (TextView)findViewById(R.id.scoreView);
+
+    private TextView timeView = (TextView)findViewById(R.id.timeView);
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -40,11 +43,6 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         gridView = (GridView) findViewById(R.id.gridView1);
-        
-        //create new TextView in the layout design, then add it here
-        scoreView = (TextView) findViewById(R.id.);
-        timeView = (TextView) findViewById(R.id.);
-        
 
         for(int i=0;i<numbers.length;i++)
             numbers[i]= blank;
@@ -66,10 +64,9 @@ public class MainActivity extends Activity {
                                     int position, long id) {
                 destination = position;
                 whack();
-                
                 scoreView.setText(score);
 
-                //Toast.makeText(getApplicationContext(),
+                Toast.makeText(getApplicationContext(),
                         Integer.toString(score),
                         Toast.LENGTH_SHORT).show();
 
