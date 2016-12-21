@@ -59,8 +59,10 @@ public class MainActivity extends Activity {
                                     int position, long id) {
                 destination = position;
                 whack();
+                
+                scoreView.setText(score);
 
-                Toast.makeText(getApplicationContext(),
+                //Toast.makeText(getApplicationContext(),
                         Integer.toString(score),
                         Toast.LENGTH_SHORT).show();
 
