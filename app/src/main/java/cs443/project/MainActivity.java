@@ -120,6 +120,7 @@ public class MainActivity extends Activity {
             if(numbers[y * w + x] == mole)
             {
                 score++;
+                time = time +5;
                 threadHandler.sendEmptyMessage(0);
                 numbers[y * w + x] = blank;
             }
@@ -144,7 +145,6 @@ public class MainActivity extends Activity {
                         if (numbers[ty * w + tx] != mole) {
                             numbers[ty * w + tx] = mole;
                             count++;
-                            time = time +5;
                         }
                         threadHandler.sendEmptyMessage(0);
                     }
