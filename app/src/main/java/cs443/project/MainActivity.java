@@ -64,7 +64,7 @@ public class MainActivity extends Activity {
                                     int position, long id) {
                 destination = position;
                 whack();
-                scoreView.setText(score);
+                scoreView.setText(Integer.toString(score));
 
                 Toast.makeText(getApplicationContext(),
                         Integer.toString(score),
@@ -102,7 +102,7 @@ public class MainActivity extends Activity {
 
                 case 1:
                     //create a text view to monitor time
-                    timeView.setText(time);
+                    timeView.setText(Integer.toString(time));
                     break;
 
                 case 2:
