@@ -19,6 +19,8 @@ import java.util.Random;
 public class MainActivity extends Activity {
 
     private GridView gridView;
+    
+    private TextView scoreView, timeView;
 
     private static int w=5, destination, count =0, score =0, time = 50;
 
@@ -38,6 +40,11 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         gridView = (GridView) findViewById(R.id.gridView1);
+        
+        //create new TextView in the layout design, then add it here
+        scoreView = (TextView) findViewById(R.id.);
+        timeView = (TextView) findViewById(R.id.);
+        
 
         for(int i=0;i<numbers.length;i++)
             numbers[i]= blank;
@@ -98,7 +105,7 @@ public class MainActivity extends Activity {
 
                 case 1:
                     //create a text view to monitor time
-                    countTextView.setText(time);
+                    timerView.setText(time);
                     break;
 
                 case 2:
