@@ -105,7 +105,7 @@ public class MainActivity extends Activity {
 
                 case 1:
                     //create a text view to monitor time
-                    timerView.setText(time);
+                    timeView.setText(time);
                     break;
 
                 case 2:
